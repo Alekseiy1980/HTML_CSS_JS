@@ -1,0 +1,25 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  Id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  name TEXT NOT NULL,
+  age INTEGER,
+  address TEXT NOT NULL
+);
+ 
+-- insert
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Юра', 18, 'Moskov');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ('Миша', 30, 'Lugansk' );
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Лена',32, 'Doneck');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Света',29, 'Moskov');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ('Дима', 30, 'Lugansk' );
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Паша',17, 'Moskov');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Петя', 23, 'Moskov');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ('Оксана', 18, 'Lugansk' );
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Валентина',32, 'Doneck');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Игорь', 23, 'Moskov');
+INSERT INTO EMPLOYEE (name,age,address) VALUES ('Борис', 30, 'Lugansk' );
+INSERT INTO EMPLOYEE (name,age,address) VALUES ( 'Галина',32, 'Doneck');
+
+-- fetch 
+SELECT name as Имя FROM EMPLOYEE WHERE age >= 18 AND age < 30 AND address = 'Moskov'; 
